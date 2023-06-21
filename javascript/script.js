@@ -1,12 +1,10 @@
 "use strict";
 
-// selecting button elements of reservation
 const chosenTime = document.querySelector("#reservation-time");
 const searchButton = document.querySelector("#search-button");
 
 function timeSelected(clickedButton) {
   let buttonId = clickedButton.id;
-  // Perform actions based on the button ID
   console.log("Clicked button ID:", buttonId);
   for (let i = 1; i < 7; i++) {
     if (i !== parseInt(buttonId.slice(-1))) {
@@ -45,58 +43,45 @@ const sushiDescriptions = {
 let selectedImage = null;
 
 function handleClick(sushiType, event) {
-  // Get the description for the clicked sushi type
   const description = sushiDescriptions[sushiType];
 
-  // Change the title and description in the 'menuItemDescription' div
   const descriptionDiv = document.getElementById('menuItemDescription1');
   descriptionDiv.querySelector('h1').textContent = sushiType;
   descriptionDiv.querySelector('p').textContent = description;
 
-  // If there was a previously selected image, remove the 'carousel-item-selected' class from it
   if (selectedImage) {
     selectedImage.classList.remove('carousel-item-selected');
   }
 
-  // Add the 'carousel-item-selected' class to the clicked image and store it as the currently selected image
   event.target.classList.add('carousel-item-selected');
   selectedImage = event.target;
 }
 
 function handleClick(sushiType) {
-  // Get the description for the clicked sushi type
   const description = sushiDescriptions[sushiType];
-  
-  // Change the title and description in the 'menuItemDescription' div
   const descriptionDiv = document.getElementById('menuItemDescription1');
   descriptionDiv.querySelector('h1').textContent = sushiType;
   descriptionDiv.querySelector('p').textContent = description;
 }
 
 function handleClick1(sushiType, event) {
-  // Get the description for the clicked sushi type
   const description = sushiDescriptions[sushiType];
 
-  // Change the title and description in the 'menuItemDescription' div
   const descriptionDiv = document.getElementById('menuItemDescription3');
   descriptionDiv.querySelector('h1').textContent = sushiType;
   descriptionDiv.querySelector('p').textContent = description;
 
-  // If there was a previously selected image, remove the 'carousel-item-selected' class from it
   if (selectedImage) {
     selectedImage.classList.remove('carousel-item-selected');
   }
 
-  // Add the 'carousel-item-selected' class to the clicked image and store it as the currently selected image
   event.target.classList.add('carousel-item-selected');
   selectedImage = event.target;
 }
 
 function handleClick1(sushiType) {
-  // Get the description for the clicked sushi type
   const description = sushiDescriptions[sushiType];
   
-  // Change the title and description in the 'menuItemDescription' div
   const descriptionDiv = document.getElementById('menuItemDescription3');
   descriptionDiv.querySelector('h1').textContent = sushiType;
   descriptionDiv.querySelector('p').textContent = description;
@@ -104,29 +89,23 @@ function handleClick1(sushiType) {
 
 
 function handleClick2(sushiType, event) {
-  // Get the description for the clicked sushi type
   const description = sushiDescriptions[sushiType];
 
-  // Change the title and description in the 'menuItemDescription' div
   const descriptionDiv = document.getElementById('menuItemDescription2');
   descriptionDiv.querySelector('h1').textContent = sushiType;
   descriptionDiv.querySelector('p').textContent = description;
 
-  // If there was a previously selected image, remove the 'carousel-item-selected' class from it
   if (selectedImage) {
     selectedImage.classList.remove('carousel-item-selected');
   }
 
-  // Add the 'carousel-item-selected' class to the clicked image and store it as the currently selected image
   event.target.classList.add('carousel-item-selected');
   selectedImage = event.target;
 }
 
 function handleClick2(sushiType) {
-  // Get the description for the clicked sushi type
   const description = sushiDescriptions[sushiType];
   
-  // Change the title and description in the 'menuItemDescription' div
   const descriptionDiv = document.getElementById('menuItemDescription2');
   descriptionDiv.querySelector('h1').textContent = sushiType;
   descriptionDiv.querySelector('p').textContent = description;
