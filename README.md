@@ -1,7 +1,8 @@
 # Hana no Yama
 
-![image](/images/Logo/Logo_White.png)
-
+<p align="center">
+  <img src="/images/Logo/Logo_White.png" />
+</p>
 
 ## Basic Informations
 
