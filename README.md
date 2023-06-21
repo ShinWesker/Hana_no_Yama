@@ -5,7 +5,7 @@
 
 ## Basic Informations
 
-This is our WebEngineering Project of our second Semester as a Student.
-The Website is a japanese Restaurant called Hana no Yama - Flower Mountain.
+This is our WebEngineering project of our second semester as a student.
+The website is a japanese restaurant called "Hana no Yama" - "Flower Mountain".
 
 The goal was to learn the use of html, css and javascript.
