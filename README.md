@@ -11,6 +11,6 @@ The website is a japanese restaurant called "Hana no Yama" - "Flower Mountain".
 The goal was to learn the use of html, css and javascript.
 
 
-### Usage
+## Usage
 
 Open the file in Visual Studio Code and start any html file with a local server or an html preview extension to display our website.
