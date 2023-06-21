@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type='text/css' rel='stylesheet' href='/css/style.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <script src="/javascript/script.js"></script>
+
+  <title>Hana no Yama</title>
+</head>
+
+<body>
+
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-button"><img class="nav-img" src="/images/NavBarIcons/home.png"
+        alt="Homepage Button"></a>
+    <a href="about_us.html" class="nav-button"><img class="nav-img" src="/images/NavBarIcons/about_us.png"
+        alt="Homepage Button"></a>
+    <a href="menu.html" class="nav-button"><img class="nav-img" src="/images/NavBarIcons/food.png"
+        alt="Homepage Button"></a>
+    <a href="reservation.html" class="nav-button"><img class="nav-img" src="/images/NavBarIcons/booking.png"
+        alt="Homepage Button"></a>
+    <a href="contact_us.html" class="nav-button"><img class="nav-img" src="/images/NavBarIcons/contact_us.png"
+        alt="Homepage Button"></a>
+  </nav>
+
+  <main>
+    <div class="vertical-hr1"></div>
+    <div class="vertical-hr2"></div>
+
+    <section>
+      <div id="subheroView">
+        <img class="imageContent" src="/images/FrontpageImages/reservation.jpeg" alt="Night table view" />
+        <div id="subtitleBox">
+          <img class="imageContent" src="/images/Logo/Logo_Black.png" alt="Logo Black" />
+          <div id="subtitleText">
+            <hr style="width: 140%;">
+            <h1>Reserve <br />Your <br> Table</h1>
+            <hr style="width: 140%;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="reserve-table">
+      <div id="rectangle">
+        <div class="pikachu">
+          <div class="glumanda">
+            <img src="/images/Logo/Logo_White.png" alt="white-logo" class="logo-reservation">
+          </div>
+          <div class=bisasam>
+            <div class="box">
+              <label for="date">DATE<input type="date" id="reserve-date"></label>
+            </div>
+            <div class="box">
+              <label for="guests">GUESTS</label>
+              <input style="position: absolute; scale: 0.7; text-align: center;" type="number" id="reservation-guests"
+                min="1" max="20">
+            </div>
+            <div class="box">
+              <form></form>
+              <label for="reservation-time">TIME</label>
+              <input type="time" id="reservation-time">
+              </form>
+            </div>
+          </div>
+
+          <div id="shiggy">
+            <a href="#2" id="search-button" class="button">Search</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section id="2">
+      <div class="reserve-table">
+        <div id="rectangle">
+          <div class="pikachu">
+            <div class="glumanda">
+              <img src="/images/Logo/Logo_White.png" alt="white-logo" class="logo-reservation">
+            </div>
+            <div class="onyx">
+              <div class="book-grid-container">
+                <button class="book-grid-item" id="suggest1" onclick="timeSelected(this)">19:30</button>
+                <button class="book-grid-item" id="suggest2" onclick="timeSelected(this)">20:00</button>
+                <button class="book-grid-item" id="suggest3" onclick="timeSelected(this)">20:30</button>
+                <button class="book-grid-item" id="suggest4" onclick="timeSelected(this)">21:00</button>
+                <button class="book-grid-item" id="suggest5" onclick="timeSelected(this)">21:30</button>
+                <button class="book-grid-item" id="suggest6" onclick="timeSelected(this)">22:00</button>
+              </div>
+            </div>
+            <div id="karpador">
+              <button id="book-button" onclick="booked()">Book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+  </main>
+
+  <footer>
+    <div class="red-line"></div>
+    <div id="social-media-links">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="red-line"></div>
+    <img class="footer-logo" src="/images/Logo/Logo_White.png" alt="Logo White" />
+    <p>(05) 3486 8371</p>
+    <p>services@hananoyama.com</p>
+    <p>4 Chome-3-6 Osugi, Edogawa City, Tokyo 132-0022, Japan</p>
+    <p>© 2023 Hana no Yama. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

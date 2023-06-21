@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type='text/css' rel='stylesheet' href='/css/style.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <script src="/javascript/script.js"></script>
+
+
+  <title>Hana no Yama</title>
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-button"><img class="nav-img" src="/images/NavBarIcons/home.png"
+        alt="Homepage Button"></a>
+    <a href="about_us.html" class="nav-button"><img class="nav-img" src="/images/NavBarIcons/about_us.png"
+        alt="Homepage Button"></a>
+    <a href="menu.html" class="nav-button"><img class="nav-img" src="/images/NavBarIcons/food.png"
+        alt="Homepage Button"></a>
+    <a href="reservation.html" class="nav-button"><img class="nav-img" src="/images/NavBarIcons/booking.png"
+        alt="Homepage Button"></a>
+    <a href="contact_us.html" class="nav-button"><img class="nav-img" src="/images/NavBarIcons/contact_us.png"
+        alt="Homepage Button"></a>
+  </nav>
+
+  <main>
+    <div class="vertical-hr1"></div>
+    <div class="vertical-hr2"></div>
+
+    <section>
+      <div id="subheroView">
+        <img class="imageContent" src="/images/FrontpageImages/restaurant.jpg" alt="Restaurant Table with Sushi" />
+        <div id="subtitleBox">
+          <img class="imageContent" src="/images/Logo/Logo_Black.png" alt="Logo Black" />
+          <div id="subtitleText">
+            <hr style="width: 230%;">
+            <h1>The <br />Menu</h1>
+            <hr style="width: 230%;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="red-line"></div>
+    <h1>Sushi</h1>
+    <div id="MenuBoard">
+
+      <div id="menuItemDescription1">
+        <h1></h1>
+        <p>
+        </p>
+
+      </div>
+      <div id="menuItemPreviewWheel">
+        <div class="row">
+          <img class="carousel-item" src="/images/FoodImages/Sushi1.jpg" alt="Katsu Kraziness" onclick="handleClick('KatsuKraziness', event)" />
+          <img class="carousel-item" src="/images/FoodImages/Sushi2.jpg" alt="Tempura Temptation" onclick="handleClick('TempuraTemptation', event)" />
+        </div>
+        <div class="row">
+          <img class="carousel-item" src="/images/FoodImages/Sushi4.jpg" alt="Rainbow Radiance" onclick="handleClick('RainbowRadiance', event)" />
+          <img class="carousel-item" src="/images/FoodImages/Sushi5.jpg" alt="Dragon's Desire" onclick="handleClick('DragonsDesire', event)" />
+        </div>
+        <div class="row">
+          <img class="carousel-item" src="/images/FoodImages/Sushi3.jpg" alt="Ocean's Oasis" onclick="handleClick('OceansOasis', event)" />
+          <img class="carousel-item" src="/images/FoodImages/Sushi6.jpg" alt="Vegetarian Voyage" onclick="handleClick('VegetarianVoyage', event)" />
+        </div>
+      </div>
+    </div>
+
+    <h1>Ramen</h1>
+    <div id="MenuBoard">
+
+      <div id="menuItemDescription2">
+        <h1></h1>
+        <p>
+          
+        </p>
+
+      </div>
+
+      <div id="menuItemPreviewWheel">
+        <div class="row">
+          <img class="carousel-item" src="/images/FoodImages/Ramen2.jpg" alt="Kyoto Garden Ramen" onclick="handleClick2('KyotoGardenRamen', event)" />
+          <img class="carousel-item" src="/images/FoodImages/Ramen3.jpg" alt="Sapporo Snowfall Ramen" onclick="handleClick2('SapporoSnowfallRamen', event)" />
+        </div>
+        <div class="row">
+          <img class="carousel-item" src="/images/FoodImages/Ramen4.jpg" alt="Tokyo Twilight Ramen" onclick="handleClick2('TokyoTwilightRamen', event)" />
+          <img class="carousel-item" src="/images/FoodImages/Ramen5.jpg" alt="Nagasaki Nautical Ramen" onclick="handleClick2('NagasakiNauticalRamen', event)" />
+        </div>
+       
+      </div>
+    </div>
+
+    <h1>Desserts</h1>
+    <div id="MenuBoard">
+
+      <div id="menuItemDescription3">
+        <h1></h1>
+        <p>
+        </p>
+
+      </div>
+
+      <div id="menuItemPreviewWheel">
+        <div class="row">
+          <img class="carousel-item" src="/images/FoodImages/Dessert1.jpg" alt="Sunset Berry" onclick="handleClick1('SunsetBerry', event)" />
+          <img class="carousel-item" src="/images/FoodImages/Dessert2.jpg" alt="Mocha Mountain" onclick="handleClick1('MochaMountain', event)" />
+        </div>
+        <div class="row">
+          <img class="carousel-item" src="/images/FoodImages/Dessert3.jpg" alt="Caramel Cascade Cheesecake" onclick="handleClick1('CaramelCascadeCheesecake', event)" />
+          <img class="carousel-item" src="/images/FoodImages/Dessert4.jpg" alt="Citrus Symphony " onclick="handleClick1('CitrusSymphony', event)" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+    <div class="red-line"></div>
+    <div id="social-media-links">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="red-line"></div>
+    <img class="footer-logo" src="/images/Logo/Logo_White.png" alt="Logo White" />
+    <p>(05) 3486 8371</p>
+    <p>services@hananoyama.com</p>
+    <p>4 Chome-3-6 Osugi, Edogawa City, Tokyo 132-0022, Japan</p>
+    <p>© 2023 Hana no Yama. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
